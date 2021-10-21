@@ -45,8 +45,12 @@
         android:layout_alignParentRight="true"
         android:backgroundTint="#00FFFFFF"
         android:src="@drawable/english_icon"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="137dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
 
     <ImageButton
         android:id="@+id/searchImageButton2"
@@ -56,8 +60,12 @@
         android:layout_alignParentRight="true"
         android:backgroundTint="#00FFFFFF"
         android:src="@drawable/math"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="162dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
 
     <ImageButton
         android:id="@+id/searchImageButton3"
@@ -67,8 +75,12 @@
         android:layout_alignParentRight="true"
         android:backgroundTint="#00FFFFFF"
         android:src="@drawable/polish"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="516dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.771" />
 
     <ImageButton
         android:id="@+id/searchImageButton4"
@@ -78,8 +90,12 @@
         android:layout_alignParentRight="true"
         android:backgroundTint="#00FFFFFF"
         android:src="@drawable/history"
-        tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="500dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.771" />
 
     <ImageView
         android:id="@+id/imageView6"
