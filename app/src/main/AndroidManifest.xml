@@ -10,18 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FEG">
         <activity
-<<<<<<< HEAD
             android:name=".MainMenuActivity"
             android:exported="false" />
         <activity
-=======
             android:name=".PrzedmiotAngielski"
             android:exported="false" />
         <activity
-            android:name=".MainMenuActivity"
-            android:exported="false" />
-        <activity
->>>>>>> b0d53c92641314f58f6b0197e3eeb52593a9b3d1
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
