@@ -13,38 +13,32 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    SharedPreferences sp;
+    public static final String EXTRA_TEXT = "com.example.application.example.EXTRA_TEXT";
+    public static final String EXTRA_TEXT1 = "com.example.application.example.EXTRA_TEXT1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        sp = getApplicationContext().getSharedPreferences("userName", Context.MODE_PRIVATE);
-        String savedName = sp.getString("userName", "");
-
-        sp = getApplicationContext().getSharedPreferences("userSurname", Context.MODE_PRIVATE);
-        String savedSurname = sp.getString("userSurname", "");
+        SharedPreferences sharedPreferences = getSharedPreferences("MySharedPref",MODE_PRIVATE);
 
 
     }
 
 
-    public void saveName(String name, String surname) {
-        SharedPreferences.Editor editor = sp.edit();
-        editor.putString("userName", name);
-        editor.putString("userSurname", surname);
-        editor.apply();
-    }
 
     public void login(View view) {
         EditText inputName = (EditText) findViewById(R.id.editTextTextPersonName);
-        EditText inputSurname = (EditText) findViewById(R.id.editTextTextPersonSurname);
+        String saveName = inputName.getText().toString();
 
-        String userName = inputName.getText().toString();
-        String userSurname = inputSurname.getText().toString();
-        saveName(userName, userSurname);
+        EditText inputSurname = (EditText) findViewById(R.id.editTextTextPersonSurname);
+        String saveSurname = inputSurname.getText().toString();
+
         Intent intent = new Intent(this, MainMenuActivity.class);
+        intent.putExtra(EXTRA_TEXT, saveName);
+        intent.putExtra(EXTRA_TEXT1, saveSurname);
+
         startActivity(intent);
     }
 }
