@@ -25,21 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         sp = getApplicationContext().getSharedPreferences("userSurname", Context.MODE_PRIVATE);
         String savedSurname = sp.getString("userSurname", "");
+        
 
-
-        EditText inputName = (EditText) findViewById(R.id.editTextTextPersonName);
-        EditText inputSurname = (EditText) findViewById(R.id.editTextTextPersonSurname);
-
-        final Button saveName = findViewById(R.id.btn_login);
-        saveName.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String userName = inputName.getText().toString();
-                String userSurname = inputSurname.getText().toString();
-                saveName(userName, userSurname);
-                openMainActivity();
-            }
-        });
     }
 
 
@@ -50,10 +37,14 @@ public class MainActivity extends AppCompatActivity {
         editor.apply();
     }
 
-    public void openMainActivity() {
+    public void login(View view) {
+        EditText inputName = (EditText) findViewById(R.id.editTextTextPersonName);
+        EditText inputSurname = (EditText) findViewById(R.id.editTextTextPersonSurname);
+
+        String userName = inputName.getText().toString();
+        String userSurname = inputSurname.getText().toString();
+        saveName(userName, userSurname);
         Intent intent = new Intent(this, MainMenuActivity.class);
         startActivity(intent);
     }
-
-
 }
