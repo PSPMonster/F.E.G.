@@ -37,6 +37,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/male_avatar"  />
 
+<<<<<<< HEAD
 <!--    <Button-->
 <!--        android:id="@+id/button2"-->
 <!--        android:layout_width="120dp"-->
@@ -45,5 +46,84 @@
 <!--        android:text=""-->
 <!--        tools:layout_editor_absoluteX="226dp"-->
 <!--        tools:layout_editor_absoluteY="103dp" />-->
+=======
+    <ImageButton
+        android:id="@+id/searchImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/englishIcon"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+    <ImageButton
+        android:id="@+id/searchImageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/math"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+    <ImageButton
+        android:id="@+id/searchImageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/polish"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="516dp" />
+
+    <ImageButton
+        android:id="@+id/searchImageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/history"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/menuBackground" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:srcCompat="@drawable/koloMainButton" />
+
+    <ImageButton
+        android:id="@+id/mainMenuButton"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/home1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.09" />
+>>>>>>> 7b1090147fc6c310d34b195d1e3f9e90bebfb62a
 
 </androidx.constraintlayout.widget.ConstraintLayout>
