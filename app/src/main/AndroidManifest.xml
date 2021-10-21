@@ -10,11 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FEG">
         <activity
-<<<<<<< HEAD
             android:name=".MainMenuActivity"
             android:exported="false" />
         <activity
-=======
             android:name=".PrzedmiotAngielski"
             android:exported="false" />
         <activity
