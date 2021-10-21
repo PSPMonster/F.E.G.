@@ -24,14 +24,13 @@ public class MainMenuActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String savedName = intent.getStringExtra(MainActivity.EXTRA_TEXT);
         String savedSurname = intent.getStringExtra(MainActivity.EXTRA_TEXT1);
-
-        saveFullName(savedName, savedSurname);
+        //saveFullName(savedName, savedSurname);
 
 //        sp = getSharedPreferences("prefUserName", 0);
 //        String name = sp.getString("prefUserName", "Error");
 
         tvName = (TextView)findViewById(R.id.tvFullName);
-        tvName.setText("xD");
+        tvName.setText(savedName);
 
     }
 
@@ -55,12 +54,8 @@ public class MainMenuActivity extends AppCompatActivity {
         Intent intent1 = new Intent(this, MainMenuActivity.class);
         startActivity(intent1);
     }
-
-<<<<<<< HEAD
-=======
     public void przedmiotMat(View view) {
         Intent intent1 = new Intent(this, PrzedmiotMatma.class);
         startActivity(intent1);
     }
->>>>>>> 8a3a694647daa76bdedc0badb47fb00f9ed85d5a
 }
