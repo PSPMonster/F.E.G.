@@ -28,4 +28,9 @@ public class MainMenuActivity extends AppCompatActivity {
         Intent intent1 = new Intent(this, MainMenuActivity.class);
         startActivity(intent1);
     }
+
+    public void przedmiotMat(View view) {
+        Intent intent1 = new Intent(this, PrzedmiotMatma.class);
+        startActivity(intent1);
+    }
 }
