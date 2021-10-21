@@ -56,4 +56,11 @@ public class MainMenuActivity extends AppCompatActivity {
         startActivity(intent1);
     }
 
+<<<<<<< HEAD
+=======
+    public void przedmiotMat(View view) {
+        Intent intent1 = new Intent(this, PrzedmiotMatma.class);
+        startActivity(intent1);
+    }
+>>>>>>> 8a3a694647daa76bdedc0badb47fb00f9ed85d5a
 }
