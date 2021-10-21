@@ -41,6 +41,7 @@
         android:id="@+id/searchImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="przedmiotAng"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:backgroundTint="#00FFFFFF"
@@ -119,6 +120,7 @@
 
     <ImageButton
         android:id="@+id/mainMenuButton"
+        android:onClick="backtoMenu"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:layout_alignParentTop="true"
@@ -142,6 +144,17 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp"
         android:onClick="backToMenu"/>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        app:srcCompat="@drawable/menuglowne" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
