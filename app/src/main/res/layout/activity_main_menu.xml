@@ -125,7 +125,7 @@
         android:src="@drawable/vector"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp"
-        android:onClick="powrotDoMenu"/>
+        android:onClick="backToMenu"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
