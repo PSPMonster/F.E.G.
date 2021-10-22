@@ -61,8 +61,12 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
+<<<<<<< HEAD
 
         android:id="@+id/btnMath"
+=======
+        android:id="@+id/searchImageButton2"
+>>>>>>> a77c3ba2fa752e341c318e51dc41796255f03e23
         android:onClick="przedmiotMat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

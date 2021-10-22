@@ -29,11 +29,20 @@ public class MainMenuActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String savedName = intent.getStringExtra(MainActivity.EXTRA_TEXT);
         String savedSurname = intent.getStringExtra(MainActivity.EXTRA_TEXT1);
+<<<<<<< HEAD
 
         SharedPreferences sharedPreferences=this.getSharedPreferences("userName", Context.MODE_PRIVATE);
+=======
+        //saveFullName(savedName, savedSurname);
+>>>>>>> a77c3ba2fa752e341c318e51dc41796255f03e23
 
         sharedPreferences.edit().putString("username", savedName).apply();
 
+<<<<<<< HEAD
+=======
+        tvName = (TextView)findViewById(R.id.tvFullName);
+        tvName.setText(savedName);
+>>>>>>> a77c3ba2fa752e341c318e51dc41796255f03e23
 
         tvName = findViewById(R.id.tvFullName);
         globalPreferences();
@@ -46,11 +55,19 @@ public class MainMenuActivity extends AppCompatActivity {
         Intent intent1 = new Intent(this, PrzedmiotAngielski.class);
         startActivity(intent1);
     }
+<<<<<<< HEAD
 
+=======
+    public void backtoMenu(View view) {
+        Intent intent1 = new Intent(this, MainMenuActivity.class);
+        startActivity(intent1);
+    }
+>>>>>>> a77c3ba2fa752e341c318e51dc41796255f03e23
     public void przedmiotMat(View view) {
         Intent intent1 = new Intent(this, PrzedmiotMatma.class);
         startActivity(intent1);
     }
+<<<<<<< HEAD
 
     public void globalPreferences() {
         SharedPreferences sharedPreferences = getSharedPreferences(MainActivity.globalPreferenceName, MODE_PRIVATE);
@@ -64,4 +81,6 @@ public class MainMenuActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+=======
+>>>>>>> a77c3ba2fa752e341c318e51dc41796255f03e23
 }
