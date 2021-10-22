@@ -15,15 +15,12 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String EXTRA_TEXT = "com.example.application.example.EXTRA_TEXT";
     public static final String EXTRA_TEXT1 = "com.example.application.example.EXTRA_TEXT1";
+    public static String globalPreferenceName = "com.wiktor.profile";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        SharedPreferences sharedPreferences = getSharedPreferences("MySharedPref",MODE_PRIVATE);
-
-
     }
 
 
@@ -34,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
         EditText inputSurname = (EditText) findViewById(R.id.editTextTextPersonSurname);
         String saveSurname = inputSurname.getText().toString();
+
+        SharedPreferences.Editor editor = getSharedPreferences(globalPreferenceName, MODE_PRIVATE).edit();
+        editor.putString("userName", saveName);
+        editor.putString("userSurname", saveSurname);
+        editor.commit();
 
         Intent intent = new Intent(this, MainMenuActivity.class);
         intent.putExtra(EXTRA_TEXT, saveName);

@@ -4,24 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PrzedmiotAngielski">
+    tools:context=".PrzedmiotAngielski"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="364dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="8dp"
         android:background="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03"
         app:srcCompat="@drawable/grang" />
+
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,39 +40,43 @@
 
     <ImageButton
         android:id="@+id/mainMenuButton"
-        android:onClick="backtoMenu"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:backgroundTint="#00FFFFFF"
+        android:onClick="backtoMenu"
         android:src="@drawable/home1"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="@+id/imageView7"
         app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.09"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/testseng" />
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
         app:srcCompat="@drawable/gradeseng" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

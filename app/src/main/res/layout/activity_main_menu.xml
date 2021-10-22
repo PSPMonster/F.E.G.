@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF5F7FB"
-    tools:context=".MainMenuActivity">
+    tools:context=".MainMenuActivity"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/ivWhiteCircle"
@@ -60,12 +61,9 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-<<<<<<< HEAD
+
         android:id="@+id/btnMath"
-=======
-        android:id="@+id/searchImageButton2"
         android:onClick="przedmiotMat"
->>>>>>> 8a3a694647daa76bdedc0badb47fb00f9ed85d5a
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -123,7 +121,7 @@
         app:srcCompat="@drawable/menu_background" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/btnHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
@@ -142,10 +140,12 @@
         android:onClick="backtoMenu"
         android:src="@drawable/home1"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/btnHome"
+        app:layout_constraintStart_toStartOf="@+id/btnHome"
         app:layout_constraintTop_toTopOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.09"
+        android:clickable="false"
+        android:focusable="false"/>
 
     <ImageButton
         android:id="@+id/backButton"
@@ -197,10 +197,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:textStyle="bold"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
